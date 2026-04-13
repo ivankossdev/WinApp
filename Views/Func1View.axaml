@@ -1,0 +1,18 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:conv="clr-namespace:Avalonia.Data.Converters;assembly=Avalonia"
+             xmlns:vm="using:WinApp.ViewModels"
+             x:Class="WinApp.Views.Func1View"
+             x:DataType="vm:Func1ViewModel">
+
+    <StackPanel Margin="10">
+        <TextBlock Text="{Binding Title}"
+                FontWeight="Bold" 
+                Margin="0,5"/>
+        <Button Content="Режим 1"  
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"   
+            Margin="0,0,0,5" 
+            Width="85" />
+    </StackPanel>
+</UserControl>
