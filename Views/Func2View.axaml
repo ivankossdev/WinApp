@@ -5,4 +5,14 @@
              x:Class="WinApp.Views.Func2View"
              x:DataType="vm:Func2ViewModel">
 
+    <StackPanel Margin="10">
+        <TextBlock Text="{Binding Title}"
+                FontWeight="Bold" 
+                Margin="0,5"/>
+        <Button Content="Режим 2"  
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"   
+            Margin="0,0,0,5" 
+            Width="85" />
+    </StackPanel>
 </UserControl>

@@ -7,5 +7,6 @@ namespace WinApp.ViewModels;
 
 public partial class Func2ViewModel : ViewModelBase
 {
-    
+    [ObservableProperty]
+    private string _title = "Функционал Режима 2";
 }
