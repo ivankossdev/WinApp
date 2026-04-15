@@ -3,18 +3,16 @@
     <h2>Описание</h2>
     Программа ничего не делает только переключает компоненты окна. 
 </p>
-<p>
 <h2>Структура проекта</h2>
-WinApp/<br>
-├── Converters/<br>
-│   └── InverseBooleanConverter.cs<br>
-├── Views/<br>
-|   └──Func1View.axaml<br>
-|   └──Func1View.axaml.cs<br>
-├── ViewModels/<br>
-|   └──Func1ViewModel.cs<br>
-|   └──Func2ViewModel.cs<br>
-├── Assets/<br>
-├── App.axaml<br>
-└── Program.cs<br>
-</p>
+WinApp/
+├── Converters/
+│   └── InverseBooleanConverter.cs
+├── Views/
+|   └──Func1View.axaml
+|   └──Func1View.axaml.cs
+├── ViewModels/
+|   └──Func1ViewModel.cs
+|   └──Func2ViewModel.cs
+├── Assets/
+├── App.axaml
+└── Program.cs
