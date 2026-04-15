@@ -9,4 +9,10 @@ public partial class Func2ViewModel : ViewModelBase
 {
     [ObservableProperty]
     private string _title = "Функционал Режима 2";
+
+    [RelayCommand]
+    private void ClickButton()
+    {
+        System.Console.WriteLine("Нажата кнопка 2");
+    }
 }

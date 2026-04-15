@@ -9,7 +9,8 @@
         <TextBlock Text="{Binding Title}"
                 FontWeight="Bold" 
                 Margin="0,5"/>
-        <Button Content="Режим 1"  
+        <Button Content="Режим 1"
+            Command="{Binding ClickButtonCommand}"
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center"   
             Margin="0,0,0,5" 
