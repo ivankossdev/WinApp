@@ -23,14 +23,16 @@
         <DockPanel Grid.Column="0" Margin="10">
             <StackPanel>
                 <TextBlock Text="Переключения функционала" FontWeight="Bold" Margin="0,5"/>
-                <Button Content="Режим 1" 
+                <Button Content="Режим 1"
                         Command="{Binding ShowFunc1Command}"
+                        IsEnabled="{Binding IsFunc1Active, Converter={StaticResource InverseBooleanConverter}}"
                         Margin="0,0,0,5"
                         HorizontalContentAlignment="Center"
                         VerticalContentAlignment="Center"
                         Width="85" />
-                <Button Content="Режим 2"  
+                <Button Content="Режим 2"
                         Command="{Binding ShowFunc2Command}"
+                        IsEnabled="{Binding IsFunc2Active, Converter={StaticResource InverseBooleanConverter}}"
                         HorizontalContentAlignment="Center"
                         VerticalContentAlignment="Center"   
                         Margin="0,0,0,5" 
