@@ -24,11 +24,13 @@
             <StackPanel>
                 <TextBlock Text="Переключения функционала" FontWeight="Bold" Margin="0,5"/>
                 <Button Content="Режим 1" 
+                        Command="{Binding ShowFunc1Command}"
                         Margin="0,0,0,5"
                         HorizontalContentAlignment="Center"
                         VerticalContentAlignment="Center"
                         Width="85" />
                 <Button Content="Режим 2"  
+                        Command="{Binding ShowFunc2Command}"
                         HorizontalContentAlignment="Center"
                         VerticalContentAlignment="Center"   
                         Margin="0,0,0,5" 
@@ -36,7 +38,7 @@
             </StackPanel>
         </DockPanel>
         <Rectangle Grid.Column="1" Width="1" Fill="Gray" Margin="0,10" HorizontalAlignment="Center"/>
-        <ContentControl Content="{Binding Func1VM}" 
+        <ContentControl Content="{Binding CurrentContent}" 
                         Grid.Column="2" 
                         ContentTemplate="{StaticResource ViewLocator}" />
     </Grid>
